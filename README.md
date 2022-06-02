@@ -16,4 +16,4 @@ foo:~bar$ nim c -r enc.nim -d # --dec or (-dp or -d -p)for pass word decryption(
 ```
 
 
-### when using this software/ransome ware be carefull the creator will not take any responsibility
+### when using this software/ransome ware be careful the creator will not take any responsibility
