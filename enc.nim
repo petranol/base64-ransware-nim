@@ -44,8 +44,11 @@ var a = get_file()
 if paramStr(1) == "--enc" or paramStr(1) == "-e":
     encrypt(len(a),a)
     echo "All your files have been infected hahaha >:)"
+elif paramStr(1) == "-te" or paramStr(1) == "--textenc":
+    let a = readLine(stdin)
+    echo encode(a)
 elif paramStr(1) == "-d" or paramStr(1) == "--dec":
-    if paramCount() > 3:  
+    if paramCount() >= 2:  
         if paramStr(2) == "-p":
             var pass = readFile(".pass.key")
             var ab:string = readLine(stdin)
