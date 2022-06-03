@@ -47,6 +47,9 @@ if paramStr(1) == "--enc" or paramStr(1) == "-e":
 elif paramStr(1) == "-te" or paramStr(1) == "--textenc":
     let a = readLine(stdin)
     echo encode(a)
+elif paramStr(1) == "-td" or paramStr(1) == "--textdec":
+    let a = readLine(stdin)
+    echo decode(a)
 elif paramStr(1) == "-d" or paramStr(1) == "--dec":
     if paramCount() >= 2:  
         if paramStr(2) == "-p":
