@@ -14,6 +14,9 @@ foo:~bar$ nim c -r enc.nim -e # --enc
 ```console
 foo:~bar$ nim c -r enc.nim -d # --dec or (-dp or -d -p)for pass word decryption(pass word is in .pass.key file) 
 ```
-
+## to encrypt text
+```console
+foo:~bar$ nim c -r enc.nim -te # --textenc
+```
 
 ### when using this software/ransome ware be careful the creator will not take any responsibility
