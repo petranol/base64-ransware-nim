@@ -50,13 +50,13 @@ if paramCount() >= 1:
         let a = readLine(stdin)
         echo encode(a)
     elif paramStr(1) == "-td" or paramStr(1) == "--textdec":
-        stdout.write("coded text: ")
+        stdout.write("encoded text: ")
         let a = readLine(stdin)
         echo decode(a)
     elif paramStr(1) == "-d" or paramStr(1) == "--dec":
         if paramCount() >= 2:  
             if paramStr(2) == "-p":
-                stdout.write("pass word: ")
+                stdout.write("password: ")
                 var pass = readFile(".pass.key")
                 var ab:string = readLine(stdin)
                 if ab == pass:
@@ -65,7 +65,7 @@ if paramCount() >= 1:
             decrypt(len(a),a)
         echo "Your files have been decoded and safe and have great time"
     elif paramStr(1) == "-dp" or paramStr(1) == "--decp":
-        stdout.write("pass word: ")
+        stdout.write("password: ")
         var pass = readFile(".pass.key")
         var ab = readLine(stdin)
         if ab == pass:
@@ -76,7 +76,7 @@ if paramCount() >= 1:
         echo "-e  | --enc     : encrypts all file in the same directory"
         echo "-d  | --dec [option = -p (with password the password is in .pass.key)] : decrypts all file in the same directory"
         echo "-te | --textenc : encrypts text given as input"
-        echo "-td | --textdec : decrypts coded text given as input"
+        echo "-td | --textdec : decrypts encoded text given as input"
         echo "-v  | --version : prints the version of the software"
         echo "-h  | --help : show all commands that can be excuted"
     else:
